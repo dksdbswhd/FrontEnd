@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title> HypherText(HypherLink) </title>
+    <style> /* html 태그들은 컨텐츠의 의미와 구조를 표시, html문서의 모양(디자인요소)은 style 여러 속성으로 설정 */
+        html{ /* html 태그에 적용되는 디자인 속성 */
+            margin: 0px; padding:0px;
+        }
+        body{/* body 태그에 적용되는 디자인 속성 */
+            margin: 0px; padding:0px;
+        }
+    </style>
 </head>
 <body>
     <!-- 웹문서 사이의 연결(링크)는 a(anchor) 태그 -->
@@ -10,6 +18,8 @@
     <br>  <!-- a 태그 뒤에는 줄바꿈 안됨. br태그로 줄바꿈한다. -->
     다음 사이트로 이동 : <a href="https://www.daum.net/"target="_blank">Daum</a>
     <!-- target="_blank" 는 새 탭으로 열기 -->
+    <br>
+    HTML 단축키 사이트 이동 : <a href="https://m.blog.naver.com/ymg7064/220576234800"target="_blank">HTML단축키</a>
     <br>
     <b>같은 폴더위치의 파일 이동🤩</b> : <a href="mytest.html">mytest.html 보여주기✔</a>
     <!-- 하나의 웹문서 내용이 화면을 벗어날때는 같은 문서의 특정 위치로 이동할 수 있다. -->
@@ -28,13 +38,16 @@
     <img src="../images/PC44.jpg"width="30%">
     <hr>
     <!-- 만약에 이미지 너비를 40%로 하면 2개 80% 이므로 같은 라인으로 배치, 1개는 라인 바꿔 표시된다. 
-        그러나 이미지 너비가 50%일 때는 합하면 100이 아니라 여백이 있으므로 오버가 되어서 모두
+        그러나 이미지 너비가 50%일 때는 합하면 100%이 아니라 여백이 있으므로 오버가 되어서 모두
         다른 라인에 표시 된다.
     -->
+    <hr>
+    <!-- div 태그로 이미지가 다른 라인에 표시가 된다. -->
     <div> <img src="../images/KakaoTalk_20210514_232219768.jpg"width="30%">  </div>
     <div>  <img src="../images/com_2.jpg"width="30%">  </div>
     <div> <img src="../images/PC44.jpg"width="30%">  </div>
-
+    <!-- 이미지에 a태그 적용하기 -->
+    네이버로 이동하기 : <a href="https://www.naver.com"><img src="../images/KakaoTalk_20210514_232219768.jpg"width="50%"></a>
 
 </body>
 </html>
