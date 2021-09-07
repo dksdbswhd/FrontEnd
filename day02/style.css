@@ -1,0 +1,41 @@
+td { /* 선택자 : td태그, 모든 td태그에 적용한다. */
+    border:1px solid gray;
+    text-align: center;
+}
+table {
+    width: 70%;
+    /* 태그요소의 외부 여백(위,아래,왼,오) */
+    margin-right: 5px;
+    margin-left: 30px;
+}
+th {
+    color: white;
+    background-color: brown;
+}
+td,th {
+    /* 태그요소의 내부 여백(위,아래,왼,오) */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+caption { /* 글꼴 크기는 16px 기본. 비율: %, em */
+    font-size: 1.2em;
+}
+
+/* ↓ 주석처리하여 비교  */
+/* 선택자를 class 사용한다. class 표시 기호 = . */
+.name { /* class="name" 모두를 선택한다.  */
+    color: powderblue;
+}
+td.name { /* td 태그 class="name" 모두를 선택한다.  */
+    color: chocolate;
+}
+/* 위의 2개 중에 한가지 방법으로만 바꿔가면서 실행해보기. */
+
+/* ★↓ 참고★ : 이 외에도 여러가지 형식으로 선택자를 사용한다. */
+div > p { /* div 태그의 자식태그 p 선택 */
+    color: blue;
+}
+
+p {
+    color: red;
+}
