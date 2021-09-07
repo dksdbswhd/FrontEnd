@@ -1,5 +1,5 @@
 table {
-    background-color: rgb(172, 164, 164);
+    background-color: rgb(212, 224, 189);
     height: 500px;
     width: 1000px;
     margin: auto;
@@ -10,4 +10,6 @@ td {
     text-align: center;
     width: 100px;
 }
-
+tr:nth-child(even) {
+    background-color: #66b9b9;
+}
