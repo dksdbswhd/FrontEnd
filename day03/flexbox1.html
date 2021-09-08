@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day03-01 css flexbox 연습1</title>
+    <style>
+        .container {
+            background-color: dodgerblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* flex-direction: column; */
+        }
+        .container div {    /* 선택자 공백은 손자들도 포함. >는 자식만 (예: .container > div 는 자식만) */
+            border: 1px solid yellow;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 2ems;
+            /* width: 100px;   flex-direction: column; 확인을 위해 아이템 너비 설정 */
+        }
+    </style>
+</head>
+<body>  
+    
+    <!-- flextbox 는 box 요소 태그 사용한다. div 태그는 너비 기본값이 브라우저 너비 100% 이다. -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+</body>
+</html>
