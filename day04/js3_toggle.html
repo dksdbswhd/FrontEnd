@@ -21,7 +21,7 @@
     let state=1; //전역변수. 1이면 ON, 0이면 OFF
     const img = document.getElementById('myimage'); //태그 요소를 가져와 변수로 참조. const 는 값의 변경을 안할때 사용
     const onoff = document.getElementById('state');
-    function bulbToggle() {
+    function bulbToggle() { //이벤트 핸들러 : onclick 이벤트 발생 시 실행되는 함수
         if(state==1) {
             bulbOff();
             state=0;
