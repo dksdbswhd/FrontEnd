@@ -17,9 +17,9 @@ result = text.replace('javascript', 'jsp'); //대소문자구분해서 일치하
 let x = "John";     //string 타입
 let y = new String("John");    //객체 생성 
 let z = new String("John");    //
-document.write(typeof x);document.write('<br>');
-document.write(typeof y);document.write('<br>');
-document.write(typeof z);document.write('<br>');
+document.write(typeof x);document.write('<br>'); //String
+document.write(typeof y);document.write('<br>'); //Object
+document.write(typeof z);document.write('<br>'); //Object
 document.write(x);document.write('<br>');
 document.write(y);document.write('<br>');
 document.write(z);document.write('<br>');
