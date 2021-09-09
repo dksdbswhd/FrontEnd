@@ -16,7 +16,7 @@
 <img src="../images/pic_bulboff.gif" alt="light" style="width:300px;cursor: pointer;" id="myimage"
                                      onclick="bulbToggle()">
 <button onclick="bulbOff()">전구 끄기</button>
-
+<!-- body 안에 있는 것들 순서대로 실행된다. img 태그가 script 뒤에 있으면 오류 : 변수 호이스팅 때문에 onoff 가 null -->
 <script>
     let state=1; //전역변수. 1이면 ON, 0이면 OFF
     const img = document.getElementById('myimage'); //태그 요소를 가져와 변수로 참조. const 는 값의 변경을 안할때 사용
