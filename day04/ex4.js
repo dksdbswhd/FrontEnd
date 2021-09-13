@@ -6,7 +6,8 @@ document.write('<br>');
 document.write('단어 위치찾기:' + text.lastIndexOf('am'));
 document.write('<br>');
 let result = text.substring(7, 11); //11은 포함 안됨.
-document.write('문자열 추출 1: ' + result);document.write('<br>');
+document.write('문자열 추출 1: ' + result);
+document.write('<br>');
 document.write('문자열 추출 2: ' +text.slice(7,11));
 document.write('<br>');
 
