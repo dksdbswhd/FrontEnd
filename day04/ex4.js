@@ -15,7 +15,7 @@ result = text.replace('javascript', 'jsp'); //대소문자구분해서 일치하
 
 
 //아래 내용은 메소드 연습 마치고 하겠습니다. 
-let x = "John";     //string 타입
+let x = "John";     //string 타입 리터럴 'john'
 let y = new String("John");    //객체 생성 
 let z = new String("John");    //
 document.write(typeof x);document.write('<br>'); //String
@@ -30,6 +30,6 @@ document.write("x,y 일치 비교 : " + (x===y)+"<br>");   //타입이 다르므
 document.write("y,z 동등 비교 : " + (z==y)+ "<br>");   // 각각의 new 연산으로 만들어진 객체는 비교 할 수 없다. false
 document.write("y,z 일치 비교 : " + (z===y)+ "<br>");  // ↑ 위와 같음
 
-//문자열 객체를 값으로 비교 : valueOf() 메소드 
-document.write(y.valueOf() ==z.valueOf());document.write('<br>');
-document.write(y.valueOf() ===z.valueOf()); document.write('<br>');
+//문자열 객체를 값으로 비교 : valueOf() 메소드로 문자열 자체롼 비교
+document.write(y.valueOf() ==z.valueOf());document.write('<br>');   //★★★true
+document.write(y.valueOf() ===z.valueOf()); document.write('<br>'); //true
