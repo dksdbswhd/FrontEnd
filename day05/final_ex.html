@@ -46,6 +46,18 @@
     <script>
         const time = ['09:00','11:00','12:30','14:00','16:45'];    //시간
         const todo = ['수업','과제','점심식사','주간회의','자료조사'];  //할일
+        let arrtime = '<th>TIME</th>';
+        time.forEach(function(value){
+            arrtime += '<td>' + value + '</td>';
+        });
+        document.getElementById('time').innerHTML = arrtime;
+
+        let arrtodo = '<th>TODO</th>';
+        todo.forEach(function(value){
+            arrtodo += '<td>' + value + '</td>';
+        });
+        document.getElementById('todo').innerHTML = arrtodo;
+
         
         </script>
 
